@@ -48,7 +48,7 @@ def huffifier(string): # печатает словарь с кодами эле�
     content_list = sorted(char_dict.items(), key=lambda k: k[1])
 
     print('Исходная строка:')
-    print(S)
+    print(string)
     print('')
 
     tree_grower(content_list)
@@ -59,7 +59,7 @@ def huffifier(string): # печатает словарь с кодами эле�
     print('')
 
     output = ''
-    for char in S:
+    for char in string:
         output += code_dict[char]
         output += ' '
 
