@@ -44,7 +44,7 @@ def coder(node, code='', output = {}): # возвращает словарь с 
     return output
 
 def huffifier(string): # печатает словарь с кодами элементов и код строки string
-    char_dict = Counter(S)
+    char_dict = Counter(string)
     content_list = sorted(char_dict.items(), key=lambda k: k[1])
 
     print('Исходная строка:')
